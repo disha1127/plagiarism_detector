@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Plagiarism Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Plagiarism Detector</h1>
+        <form id="plagiarism-form">
+            <div class="text-inputs">
+                <div class="text-area">
+                    <label for="text1">Text 1:</label>
+                    <textarea id="text1" name="text1" rows="10" cols="50" placeholder="Enter the first text here..."></textarea>
+                </div>
+                <div class="text-area">
+                    <label for="text2">Text 2:</label>
+                    <textarea id="text2" name="text2" rows="10" cols="50" placeholder="Enter the second text here..."></textarea>
+                </div>
+            </div>
+            <button type="submit" id="check-plagiarism">Check Plagiarism</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
